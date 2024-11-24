@@ -15,22 +15,26 @@
    cd pgats-ci-projeto-base
    yarn
    ```
-7. Execute os testes de unidade - isso vai gerar um relatório
+7. Instale os Browser do Playwright
+   ```shell
+   yarn playwright install
+   ```
+8. Execute os testes de unidade - isso vai gerar um relatório
    ```shell
    yarn run test
    ```
-8. Abra o relatório de cobertura de código em `reports/coverage/lcov-report` 
-9. Execute os testes de mutação com o Stryker
+9. Abra o relatório de cobertura de código em `reports/coverage/lcov-report` 
+10. Execute os testes de mutação com o Stryker
    ```shell
    yarn run test:mutation
    ```
-10. Abra o relatório de mutação em `reports/mutation`
-11. Execute os testes end-to-end com o Playwright
+11. Abra o relatório de mutação em `reports/mutation`
+12. Execute os testes end-to-end com o Playwright
     ```shell
     yarn run e2e
     ```
-12. Execute a aplicação com `yarn start`
-13. Acesse a aplicação publicada [neste link](https://pgats-ci-example.netlify.app)
+13. Execute a aplicação com `yarn start`
+14. Acesse a aplicação publicada [neste link](https://pgats-ci-example.netlify.app)
 
 ---
 💜⚡️
